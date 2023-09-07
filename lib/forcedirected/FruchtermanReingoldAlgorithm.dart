@@ -38,7 +38,8 @@ class FruchtermanReingoldAlgorithm implements Algorithm {
   void init(Graph? graph) {
     graph!.nodes.forEach((node) {
       displacement[node] = Offset.zero;
-      node.position = Offset(rand.nextDouble() * graphWidth, rand.nextDouble() * graphHeight);
+      //node.position = Offset(
+      //    rand.nextDouble() * graphWidth, rand.nextDouble() * graphHeight);
     });
   }
 
